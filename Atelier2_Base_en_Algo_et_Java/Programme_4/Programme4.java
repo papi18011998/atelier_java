@@ -7,9 +7,9 @@ public class Programme4 {
         int dividende = 0;
         int diviseur = 1;
         int quotient = 0;
-        System.out.println("Saisir la valeur du dividende");
+        System.out.println("Saisir la valeur du dividende:");
         dividende = sc.nextInt();
-            System.out.println("Saisir la valeur du diviseur.Il doit être different de 0");
+            System.out.println("Saisir la valeur du diviseur:");
             diviseur = sc.nextInt();
         quotient = dividende / diviseur;
         System.out.println("Le quotient de "+dividende+" et de "+diviseur+" fait: "+quotient);
