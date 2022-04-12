@@ -7,6 +7,6 @@ public class Atelier{
         System.out.println("Entrez votre nom : ");
         nom = sc.nextLine();
         System.out.println("Bonjour " + nom + " !");
-        
+        sc.close();
     }
 }
