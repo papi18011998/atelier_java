@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
         "Atelier3_Structure/TestValeur",
+        "Atelier3_Structure/ControleBoucleDoWhile",
         "Atelier3_Structure/BoucleWhile",
         "Atelier3_Structure/BoucleFor",
         "Atelier3_Structure/BoucleDoWhile",
@@ -12,6 +13,6 @@
         "Atelier2_Base_en_Algo_et_Java/Programme_4",
         "Atelier2_Base_en_Algo_et_Java/Programme_3",
         "Atelier2_Base_en_Algo_et_Java/Programme_2",
-        "Atelier3_Structure/ControleBoucleDoWhile"
+        "Atelier4_Sous programme"
     ]
 }
