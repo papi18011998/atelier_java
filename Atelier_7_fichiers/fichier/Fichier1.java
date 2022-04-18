@@ -10,7 +10,7 @@ public class Fichier1 {
        Scanner sc = new Scanner(System.in);
        ArrayList<String> courses = new ArrayList<String>();
 
-       System.out.println("Combien de produit achetez-vous ?");
+       System.out.println("Combien de produits achetez-vous ?");
        int nombre = sc.nextInt();  
 
        for(int i=0;i<nombre;i++){
