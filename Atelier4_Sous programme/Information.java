@@ -2,7 +2,13 @@ import java.util.Scanner;
 import java.time.LocalDate;
 
 public class Information {
-    static void Identifiant(String nom, String prenom, String adresse, String lieu, int telephone, String date_naissance,LocalDate ld) {
+    static void Identifiant(int nombre,String nom, String prenom, String adresse, String lieu, int telephone, String date_naissance,LocalDate ld) {
+        System.out.println("Combien d'utilisateurs voulez vous saisir ?");
+        Scanner nombreSaisi = new Scanner(System.in);
+        nombre = nombreSaisi.nextInt();
+       
+        for(int i=0;i<nombre;i++) { 
+
         Scanner monIdentif = new Scanner(System.in);
         System.out.println("Saissisez votre nom ");
         nom = monIdentif.nextLine();
@@ -22,17 +28,22 @@ public class Information {
         System.out.println("Saissisez votre date de naissance ");
         date_naissance = monIdentif.next();
         ld = LocalDate.parse(date_naissance);
+       
         
         System.out.println("Nom "+nom + " et Prénom :" + prenom);
         System.out.println("Adresse : " + adresse);
         System.out.println("Lieu de naissance : " + lieu);
         System.out.println("Numéro de téléphone : " + telephone);
         System.out.println("Date de naissance : " + ld);
-
-        monIdentif.close(); 
+       
+    }
+    //monIdentif.close(); 
+    nombreSaisi.close();
+        
     }
        
     public static  void main(String[] args) {
+        int nombre = 0;
         String nom = "";
         String prenom = "";
         String adresse = "";
@@ -40,7 +51,7 @@ public class Information {
         int telephone = 0 ;
         String date_naissance = "" ;
         LocalDate ld = null;
-        Identifiant(nom, prenom, adresse, lieu, telephone, date_naissance, ld);
-
+        Identifiant(nombre, nom, prenom, adresse, lieu, telephone, date_naissance, ld);
+        
     }
 }
